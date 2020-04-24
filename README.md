@@ -15,8 +15,11 @@ This image consists of:
 Let's execute SQL queries from `queries.sql` file, located in the current directory:
 
 ```
-docker run --rm  -v $(pwd):/r mss2 -u "jdbc:sqlserver://mssqlserver.example.com:1433;databaseName=mydatabase" -n "mydbuser@mssqlserver" -p "billy26lifespan93Haas" -f /r/queries.sql
+docker run --rm  -v $(pwd):/r dimedrol/sqlline:latest -u "jdbc:sqlserver://mssqlserver.example.com:1433;databaseName=mydatabase" -n "mydbuser@mssqlserver" -p "billy26lifespan93Haas" -f /r/queries.sql
 ```
 
 * `/r` path used just to make command shorter
 * Sample command above was tested on Azure MSSQL database service, so actual database login looks like `login@servername`
+
+
+dimedrol/sqlline:latest
