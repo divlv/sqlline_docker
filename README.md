@@ -1,4 +1,4 @@
-# Dockerized Sqlline with MSSQL JDBC driver
+# Dockerized Sqlline v.1.9.0 with MSSQL JDBC driver v.8.2.2
 
 This is Dockerized version of Sqlline commandline tool with built in MSSQL JDBC driver.
 
